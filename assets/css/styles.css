@@ -1,0 +1,216 @@
+html {
+    font-family: "Codec Pro";
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ff3344;
+    font-size: 14px;
+    color: #4C4C66;
+    overflow: hidden;
+
+    background-image: url(https://thisisenzo.github.io/auth_page/auth_page/assets/images/bg2.png), url(https://thisisenzo.github.io/auth_page/auth_page/assets/images/bg1.png);
+    background-attachment: fixed;
+    background-position: 0 100%, 40% 0;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.left_side, .right_side {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.left_side {
+    left: 0;
+}
+
+.right_side {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    right: 0;
+    background-color: #fff;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.logo > img {
+    width: 150px;
+}
+
+.section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section > h3, .section > p {
+    text-align: left;
+    font-weight: 400;
+}
+
+.left_side .section > h3, .left_side .section > p {
+    color: #fff;
+}
+
+.left_side .section > h3 {
+    font-size: 42px;
+}
+
+.section > p {
+    font-weight: 400;
+    line-height: 38px;
+}
+
+.left_side .section > p {
+    font-size: 30px;
+}
+
+.right_side .section h1 {
+    font-size: 42px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.section > h3 span:last-child {
+    color: #e5a912;
+    font-weight: 300;
+}
+
+.right_side .section p.description {
+    font-size: 18px;
+}
+
+.right_side .section h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.form_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_side .section {
+    height: 100%;
+    max-width: 340px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.entry-item .password-label, .section .create p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_container > .section h1 {
+    font-weight: 600;
+}
+
+.entry > div {
+    margin: 20px 0;
+}
+
+.api input[type="text"], .api input[type="password"], .api input[type="email"] {
+    display: block;
+    width: 308px;
+    background: #F3F2F6;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Codec Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 20px 15px;
+    border: 1px solid #F3F2F6;
+    margin: 10px 0;
+}
+
+.api {
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.api ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.api ul > li {
+    margin: 20px 0;
+}
+
+.form_container .api .entry input:focus {
+    border-color: #7B61FF;
+}
+
+.form_container .api button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 32px 10px;
+    font-family: 'Codec Pro';
+    font-style: normal;
+    width: 340px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+    border-radius: 42px;
+    margin: 20px 0;
+    cursor: pointer;
+
+    color: #FF3344;
+}
+
+
+.form_container .api .buttons button {
+    border: none;
+    background: #FFD96B;
+}
+
+.form_container .api .options button {
+    border: 1px solid #FF3344;
+    background: #fff;
+}
+
+.api button[aria-disabled="true"]{
+    color: rgb(150, 150, 163);
+    background-color: rgb(243, 242, 246) !important;
+    cursor: default;
+}
+
+.form_container a {
+    color: #659BF5;
+    text-decoration: none;
+}
+
+.form_container .entry-item label {
+    display: inline-block;
+}
+
+.divider h2 {
+    text-align: center;
+    margin: 30px 0;
+}
